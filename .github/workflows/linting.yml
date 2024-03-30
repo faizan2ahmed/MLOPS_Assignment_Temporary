@@ -17,8 +17,8 @@ jobs:
       with:
         python-version: 3.8
 
-    - name: Install Flake8
-      run: pip install flake8
+    - name: Install dependencies
+      run: make install
 
-    - name: Run Flake8
+    - name: Run Linting
       run: make flake8
