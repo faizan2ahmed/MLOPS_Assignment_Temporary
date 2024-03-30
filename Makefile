@@ -6,4 +6,7 @@ docker-build:
 		
 docker-run:
 		docker run -p 5000:5000 task4
+
+flake8:
+		flake8 --ignore=E501,F401 .
 	
