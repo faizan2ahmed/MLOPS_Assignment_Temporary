@@ -9,7 +9,7 @@ pipeline {
     stage('Build Docker Image') {
       steps {
         script {
-          dockerImage = docker.build("MLOPS_Assignment_1:${env.BUILD_ID}")
+          dockerImage = docker.build("mlops_assignment_1:${env.BUILD_ID}")
         }
       }
     }
